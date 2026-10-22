@@ -1,0 +1,28 @@
+{
+  "schema_version": "day1.v1",
+  "map_id": "parking_lot_summon_001",
+  "coordinate_frame": "local_ground_xy",
+  "units": "m",
+  "source": "prototype_assumption_not_from_apa_map",
+  "boundary": {
+    "type": "parking_lot_boundary",
+    "closed": true,
+    "vertices_xy": [[0.0, 0.0], [30.0, 0.0], [30.0, 20.0], [0.0, 20.0], [0.0, 0.0]],
+    "todo": "替换为真实召集区域马路边界；当前仅用于配置检查和可视化。"
+  },
+  "road": {
+    "type": "unstructured_conflict_area_prototype",
+    "centerline_xy": [[0.0, 10.0], [30.0, 10.0]],
+    "todo": "确认实际道路拓扑、可行驶区域和静态障碍物边界。"
+  },
+  "apa_reference_grid": {
+    "xy_resolution_m": 0.5,
+    "yaw_resolution_rad": 0.0872664626,
+    "motion_resolution_m": 0.1,
+    "collision_detect_step_m": 0.5,
+    "source": "APA get_planner_global.m",
+    "applicability": "reference_only; not used by day1 planner"
+  }
+}
+
+
